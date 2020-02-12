@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
 })
 export class PlaceholderService {
 
-  constructor() { }
+  constructor() { private httpService: HttpClient }
 
-  async get(){
-    
+  async get(): Promise <any> {
+
   }
 }

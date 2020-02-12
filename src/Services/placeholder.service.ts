@@ -6,9 +6,9 @@ import {HttpClient} from '@angular/common/http'
 })
 export class PlaceholderService {
 
-  constructor() { private httpService: HttpClient }
+  constructor(private httpService: HttpClient) {  }
 
   async get(): Promise <any> {
-
+    return this.httpService.get('https://jsonplaceholder.typicode.com/todos').toPromise();
   }
 }

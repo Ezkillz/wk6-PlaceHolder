@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'Placeholder';
   dataSource;
 
-  mgOnInit(): Promise<void>{
+  async ngOnInit(){
     this.dataSource = await this.placeholder.get();
   }
 }
